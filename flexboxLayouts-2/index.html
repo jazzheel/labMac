@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+		}
+		
+		header{
+			
+	
+			background-color:#020000;
+			color: white;
+			font-size:100px;
+			background-image:url("images/moon.jpg");
+			height: 50vh;
+			display: flex;
+			align-items: center;
+			text-justify: left;
+			padding-left: 100px;
+		
+			}
+
+			header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+			}
+			
+			.flex-container{ 
+		  	display: flex;
+			align-items: stretch;	
+			}
+			
+			
+			
+			.flex-container div{
+			background-color: black;
+			padding:20px;
+			margin:10px;
+			}
+		
+			#item1{
+			flex:25%;			
+			}
+		
+			#item1 img {
+			width:100%
+			}
+		
+			#item2{
+			flex:50%;
+			color: white;
+			}
+		
+			#item3{
+			flex:25%;
+			}
+		
+			#item3 img{
+				width:100%;
+			}
+		
+		.btn{
+			width:100%;
+			padding: 15px 0px;
+			font-size: 30px;
+		}
+		
+		.btn:hover{
+			background-color: orange;
+		}
+		
+			#item4{
+			flex:50%;
+			color: white;
+			}
+		
+			#item5{
+			flex:50%;
+			color: white;
+			}
+		
+			#item6{
+			flex:25%;
+			}
+			
+			#item6 img{
+			width:100%;
+			}
+		
+			#item7{
+			flex:25%;
+			}
+		
+			#item7 img{
+			width:100%;
+			}
+		
+			#item8{
+			flex:25%;
+			color: white;
+			}
+			
+			#item9{
+			flex:25%;
+			}
+		
+			#item10{
+			flex:25%;
+			}
+		
+			#item11{
+			flex:50%;
+			color: orange;
+			}
+		
+			#item12{
+			flex:25%;
+			}
+		
+				
+	
+		
+		footer{
+			background-color:black;
+			color: white;
+			padding:50px 0px;
+			text-align: center;
+			
+		}			
+		
+			
+		@media (max-width: 800px) {
+		  .flex-container {
+			flex-direction: column;
+		  }
+
+		
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>Happy Hallooween</h1>
+	
+	</header>
+	
+	<div class="flex-container">
+		<div id="item1">
+			<img src="images/person.jpg" alt="pic">
+			</div>
+		<div id="item2">
+			
+			<p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. ... One of the most important of these is a topic sentence.A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence called the topic sentence. A topic sentence has several important functions: it substantiates or supports an essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it advises the reader of the subject</p>
+			
+		</div>
+		
+		<div id="item3"><img src="images/pumpkin.jpeg" alt="pumpkin">
+		
+		<br>
+			<p><button class="btn">Click Herre</button></p>
+			<p><button class="btn">Click Herre</button></p>
+		
+		</div>
+		
+	</div> 
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4">
+			
+			<p>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. ... One of the most important of these is a topic sentence.A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence called the topic sentence. A topic sentence has several important functions: it substantiates or supports an essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s more effective to place another sentence before the topic sentence—for example, a sentence linking the current paragraph to the previous one, or one providing background information.</p>
+		</div>
+		
+		<div id="item5">A topic sentence has several important functions: it substantiates or supports an essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s more effective to place another sentence before the topic sentence—for example, a sentence linking the current paragraph to the previous one, or one providing background information.
+</div>
+	</div>
+	
+</body>
+	
+
+	<div class="flex-container">
+		<div id="item6">
+			<img src="images/lantern.jpeg" alt="pumpkin">
+		</div>
+		
+		<div id="item7">
+			<img src="images/pumpkin2.jpeg" alt="lantern">
+		</div>
+		
+		<div id="item8">
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quae optio, deleniti perferendis vel nulla ipsa consectetur ducimus vitae sint.</p>
+			
+			<ul>
+				<li>something goes here</li>
+				<li>something goes here</li>
+				<li>something goes here</li>
+			</ul>
+		
+		</div>
+		<div id="item9">
+			<p><button class="btn">Click Herre</button></p>
+		   	<p><button class="btn">Click Herre</button></p>
+			
+		</div>
+	</div>
+
+	
+	<footer>
+		<div class="flex-container">
+		<div id="item10"></div>
+		<div id="item11">
+			
+				<p>Jazzheel Sta Ana</p>
+				<p>&copy; 2021</p>
+	</div>
+		<div id="item12"></div>
+		</div>
+	
+</footer>
+</html>
